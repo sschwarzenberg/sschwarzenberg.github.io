@@ -36,7 +36,7 @@ img {
     ;
 }
 
-.proyects:hover {
+img:hover {
     transform: scale(1.02);
     cursor: pointer;
 }
@@ -63,6 +63,24 @@ img {
   .banner-feuc {
     width: 100%;
     background-image: url("imgs/feuc/banner_feuc.png");
+    height: 450px;
+    background-color:gray;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .banner-cai{
+    width: 100%;
+    background-image: url("imgs/cai/banner_cai.png");
+    height: 450px;
+    background-color: purple;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .banner-sincerar{
+    width: 100%;
+    background-image: url("imgs/sincerar/banner_sincerar.png");
     height: 450px;
     background-color: purple;
     background-position: center;
