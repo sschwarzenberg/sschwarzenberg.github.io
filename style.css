@@ -46,7 +46,6 @@ img:hover {
     width: 100%;
     background-image: url("imgs/glik/banner_glik.png");
     height: 450px;
-    background-color: purple;
     background-position: center;
     background-size: cover;
   }
@@ -55,7 +54,6 @@ img:hover {
     width: 100%;
     background-image: url("imgs/edunet/banner_edunet.png");
     height: 450px;
-    background-color: purple;
     background-position: center;
     background-size: cover;
   }
@@ -69,20 +67,18 @@ img:hover {
     background-size: cover;
   }
 
-  .banner-cai{
+  .banner-cai {
     width: 100%;
     background-image: url("imgs/cai/banner_cai.png");
     height: 450px;
-    background-color: purple;
     background-position: center;
     background-size: cover;
   }
 
-  .banner-sincerar{
+  .banner-sincerar {
     width: 100%;
     background-image: url("imgs/sincerar/banner_sincerar.png");
     height: 450px;
-    background-color: purple;
     background-position: center;
     background-size: cover;
   }
