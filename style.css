@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
 
 #name {
     margin-top: 1em;
@@ -8,8 +9,16 @@
     font-weight: 600;
 }
 
-h2, h1, h3, h4{
+h2, h1, h3, h4 {
   font-family: "IBM Plex Sans",sans-serif;
+}
+
+.fs-7 {
+  font-size: 0.9rem !important;
+}
+
+.linked-text:hover {
+  color: black !important;
 }
 
 .nav-item {
@@ -18,20 +27,27 @@ h2, h1, h3, h4{
   letter-spacing: 0.05em;
 }
 
-p{
+p, li {
     font-family: "IBM Plex Sans",sans-serif;
     font-weight: 300;
-    letter-spacing: 0.05em;
     line-height: 1.6;
 }
 
-.fit-image{
+b {
+  font-weight: 800;
+}
+
+.fit-image {
     width: 100%;
     object-fit: cover;
     max-height: 480px;
 }
 
-.top-buffer { margin-top:20px; }
+.fit-image:hover {
+  opacity: 75%;
+}
+
+.top-buffer { margin: 10px 0 10px 0; }
 
 .shadow-img {
     opacity: 1;
@@ -101,6 +117,22 @@ p{
   } */
 
 
-  .projects{
+  .projects {
     border-radius: 1rem;
+  }
+
+  .chip {
+    font-weight: 400;
+    color: rgb(35, 35, 35); 
+    /* background-color: rgba(35, 35, 35, 0.10); */
+    border: 1px solid rgb(35, 35, 35);
+  }
+
+  .nav-link {
+    color: gray;
+    font-size: large;
+  }
+
+  .nav-link:hover {
+    color: black;
   }
