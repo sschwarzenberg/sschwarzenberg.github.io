@@ -11,6 +11,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        
+        <script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css">
 
         <link rel="stylesheet" href="../style.css">
         <link rel="icon" href="imgs/icon.png">
@@ -180,32 +183,146 @@
                 <div class="tab-pane fade" id="biagio-tab-pane" role="tabpanel" aria-labelledby="biagio-tab" tabindex="0">
                     <div class="row justify-content-center mt-4">
                         <div class="col-lg-8">
-                            <h1 class="mt-4">Giuseppe <b>Biagio</b> </h1>
+                            <h1 class="mt-4">Giuseppe <b style="color: purple;">Biagio</b> </h1>
                             <span class="badge rounded-pill chip">Front-end</span>
                             <span class="badge rounded-pill chip">Back-end</span>
                             <p class="mt-4">Biagio is a versatile module that facilitates project tracking and documentation as well as fuels AI innovation in formula creation. The app has been refined to optimize workflow efficiency and adapt to a wide array of needs. Currently, the platform plays a pivotal role in project oversight, recipe generation, and the comprehensive documentation of innovative products. This underscores the software team's ongoing commitment to improving existing features and developing new functionalities, driven by a profound understanding of user workflows. </p>
                            
                             <h5 class="mt-4"> Roles & Projects </h5>
                             <p><b>Front-end Development:</b> At the beginning Biagio's front-end components were all custom made. My initial tasks centered either on creating whole pages or custom components (buttons, sliders, dropdowns, etc). We later decided to add a component library to handle the atomic components to speed our development. In this I was in charge of refactoring our old pages to use the new vuetify components. Some other recent tasks included adding a new chat frontend for an ingredient recommender and formula creator AI LLM. </p>
-                            <p><b>Back-end Development:</b> To drive platform expansion, we undertook the creation of numerous models designed for both logical coherence and scalability in our development efforts. My responsibilities included crafting multiple such models and overseeing their interactions, with a constant eye on ensuring the future scalability of our databases. For our back-end development I had to use Django and GraphQL.</p>
+                            <p><b>Back-end Development:</b> In Biagio's back-end development, I worked with Django and GraphQL. My responsibilities included creating new models and attributes in the backend, as well as linking backend services to retrieve ingredient data through queries. </p>
                             
+                            <h5 class="mt-4 mb-2"> Front-end refactor </h5>
+                            <p> Since NotCo's development needed to be faster and more mantainable, the decision to use an external component library was made.
+                                For this I had to refactor most of the page's views to use the new library and it's components.
+                                Some examples of refactors done on the site include: </p>
+                            <div class="image-compare shadow-img my-3">
+                                <img src="../imgs/NotCo/form-before.png" alt=""/>
+                                <img src="../imgs/NotCo/form-after.png" alt=""/>
+                            </div>
+                            <div class="image-compare shadow-img my-3">
+                                <img src="../imgs/NotCo/prep-before.png" alt=""/>
+                                <img src="../imgs/NotCo/prep-after.png" alt=""/>
+                            </div>
+                            <div class="image-compare shadow-img my-3">
+                                <img src="../imgs/NotCo/reviews-before.png" alt=""/>
+                                <img src="../imgs/NotCo/reviews-after.png" alt=""/>
+                            </div>
+                            <h5 class="mt-5 mb-2"> AI tools </h5>
+                            <p> NotCo leverages a variety of AI tools to enhance and expedite product development. One notable addition to Biagio is the incorporation of a new Language Model (LLM) to provide ingredient and formula recommendations. The goal was to create a versatile chat feature that could eventually find its place in our internal front-end component library.</p>
+                            <p> In this endeavor, I took charge of developing and connecting the frontend chat at two levels of abstraction. The first level involved crafting a general chat component that could be customized using parameters such as message content, creators, dates, and front-end visual attributes.</p>
+                            <p> The second level of abstraction brought forth a recommender chat, designed to establish connections with different endpoints for making requests and utilizing our internal ingredients as recommendations. Furthermore, I ensured that the responses received were formatted to enhance the overall user experience.</p>
 
+                            <img
+                            src="../imgs/NotCo/chat.png"
+                            class="w-100 mb-2 mb-md-4 shadow-1-strong"
+                            />
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="toolbox-tab-pane" role="tabpanel" aria-labelledby="toolbox-tab" tabindex="0">
-                    <h1 class="mt-4">Giuseppe <b>Toolbox</b> </h1>
-                    <span class="badge rounded-pill chip">Front-end</span>
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-lg-8">
+                            <h1 class="mt-4">Giuseppe <b style="color: #6BB0EC;">Toolbox</b> </h1>
+                            <span class="badge rounded-pill chip">Front-end</span>
+                            <p class="mt-4">Toolbox allows and chef or scientist to create and optimize over different formulations to achieve a plant-based prototype that hits the texture and functionality of an animal product. Since the behind-the-scenes AI can adapt to any process and optimize over many parameters simultaneously, it speeds up the initial product development time up to 10x. Toolbox is now being used in most of the new product development within NotCo.</p>
+                            <h5 class="mt-4"> Roles & Projects </h5>
+                            <p><b>Front-end Development:</b>I worked on toolbox for a short amount of time. My main role in its development was to create te first front-end using Vuetify, which at the time was just being added to the platforms. </p>
+                            <h5 class="mt-4 mb-2"> Front-end refactor </h5>
+                            <p> I joined the Toolbox team when it was just an MVP. I was in charge of developing the frontend so it could be presented and used by users for 
+                                the first time. Bellow are some of the screens developed. </p>
+                            <div class="image-compare shadow-img my-3">
+                                <img src="../imgs/NotCo/list-before.png" alt=""/>
+                                <img src="../imgs/NotCo/list-after.png" alt=""/>
+                            </div>
+                            <div class="image-compare shadow-img my-3">
+                                <img src="../imgs/NotCo/step4-before.png" alt=""/>
+                                <img src="../imgs/NotCo/step4-after.png" alt=""/>
+                            </div>
+                            <div class="image-compare shadow-img my-3">
+                                <img src="../imgs/NotCo/detail-before.png" alt=""/>
+                                <img src="../imgs/NotCo/detail-after.png" alt=""/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="platform-tab-pane" role="tabpanel" aria-labelledby="platform-tab" tabindex="0">
-                    <h1 class="mt-4">Cross-Platform </h1>
-                    <span class="badge rounded-pill chip">Project Management</span>
-                    <span class="badge rounded-pill chip">Front-end</span>
-                    <span class="badge rounded-pill chip">Back-end</span>
-                    <span class="badge rounded-pill chip">UX</span>
-                    <span class="badge rounded-pill chip">UI</span>
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-lg-8">
+                            <h1 class="mt-4">Cross-Platform </h1>
+                            <span class="badge rounded-pill chip">Project Management</span>
+                            <span class="badge rounded-pill chip">Front-end</span>
+                            <span class="badge rounded-pill chip">Back-end</span>
+                            <span class="badge rounded-pill chip">UX</span>
+                            <span class="badge rounded-pill chip">UI</span>
+                            <p class="mt-4"> 
+                                NotCo has four main modules in it's platform, where each backend works as a different service that can be consumed.
+                                Sensory data is crucial in product development, since it provides a standardized mechanisim to evaluate and track the development
+                                of projects through time. A Cross-Platform project I had to develop was to include sensory data in all platforms and create a 
+                                mantainable front-end and back-end infrastructure to hold the project.
+                                For this, I had to participate in user research to understand when and how sensory data was used, map out the whole development process,
+                                ideate features and build the solutions.
+                             </p>
+                             <h5 class="mt-4"> Users  </h5>
+                             <p><b>Internal Sensory Team:</b> NotCo has an in-house sensory team that analyzes the NotCo products and organizes expert panels to get sensory data for products. 
+                                The sensory data allows to compare the current NotCo products with the animal target to see how each prototype can be improved.
+                                In Flora, the sensory team adds the sensory data for the target into the brief so it can be sent to the different flavor houses. 
+                                The data added is collected by expert sensory panels.
+                            </p>
+                            <p><b>External Trained Panels:</b> Trained panels have between 4 to 12 people that score different flavor characteristics from 1 to 9.
+                                The characteristics are defined in a vocabulary session where the members of the panel describe the flavors individually to later 
+                                communicate them and arrive at a common set of words with all the members of the panel. Later they have a calibration session where the different members are asked to try different references to set a scale for each of the characteristics.
+                                After this they have formal sessions where the panelist evaluate individually the blind samples. The session consider 2 duplicated to
+                                validate data by statistical analysis.
+                            </p>
+                            <p><b>Food Scientists & Chefs: </b> 
+                            </p>
+                            <p><b>Flavorists: </b> 
+                                Flavorists external users of NotCo tools. They receive briefs with three main parts: descriptions of the target flavor, GCMS analysis data, and custom recommenders for the product.
+                                Internally in the flavorists’ workflow, the sensorial analysis is done by comparison and they only have rough estimators for how a product is. They rate their flavors in a scale from 1 to 9 on how good they and their peers think they are. They also add descriptors to identify the different flavors.</b> 
+                            </p>
+                        </div>
+                    </div>
                 </div>
               </div>
+              <script type="text/javascript">
+                //    import ImageCompare from "image-compare-viewer";
+                const options = {
+
+                // UI Theme Defaults
+
+                controlColor: "#5A5A5A",
+                controlShadow: true,
+                addCircle: false,
+                addCircleBlur: true,
+
+                // Label Defaults
+
+                showLabels: true,
+                labelOptions: {
+                before: 'Before',
+                after: 'After',
+                onHover: false
+                },
+
+                // Smoothing
+
+                smoothing: true,
+                smoothingAmount: 100,
+
+                // Other options
+
+                hoverStart: false,
+                verticalMode: false,
+                startingPoint: 50,
+                fluidMode: false
+                };
+                const viewers = document.querySelectorAll(".image-compare");
+            //    const viewer = new ImageCompare(element, options).mount();
+               viewers.forEach((element) => {
+                let view = new ImageCompare(element,options).mount();
+                });
+              </script>
         </body>
  
 
