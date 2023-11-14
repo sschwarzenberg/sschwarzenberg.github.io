@@ -9,12 +9,16 @@
     font-weight: 600;
 }
 
-h2, h1, h3, h4 {
+h2, h1, h3, h4, .btn {
   font-family: "IBM Plex Sans",sans-serif;
 }
 
 .fs-7 {
   font-size: 0.9rem !important;
+}
+
+.rounded-lg {
+  border-radius: 25px;
 }
 
 .linked-text:hover {
@@ -126,6 +130,13 @@ b {
     color: rgb(35, 35, 35); 
     /* background-color: rgba(35, 35, 35, 0.10); */
     border: 1px solid rgb(35, 35, 35);
+  }
+
+  .light-chip {
+    font-weight: 400;
+    color: #f8f9fa; 
+    /* background-color: rgba(35, 35, 35, 0.10); */
+    border: 1px solid #f8f9fa;
   }
 
   .nav-link {
